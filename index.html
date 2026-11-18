@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background: pink;">
+    <center>
+        <h1>Registration Form</h1>
+        <form id="f" onsubmit="show(event)">
+            <input id="n" placeholder="Name" required>
+            <input id="e"  type="email" placeholder="Email" required>
+            <button id="b">Submit</button>
+        
+
+        </form>
+        <h2 id="h" hidden >Submitted Details</h2>
+        <p id="o"></p>
+        <script>
+            function show(x){
+                x.preventDefault();
+                b.disabled=true;
+                o.innerText="Name:"+n.value+"Email:"+e.value;
+                f.hidden=true;
+                h.hidden=false;
+            }
+            
+        </script>
+
+    </center>
+    
+    
+</body>
+</html>
